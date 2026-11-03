@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Street Run x Movement FP Hyrox</title>
+<meta name="description" content="Street Run x Movement FP Hyrox. 7 November, 10am. RSVP to book your spot.">
+<meta property="og:title" content="Street Run x Movement FP Hyrox">
+<meta property="og:description" content="7 November, 10am. RSVP to book your spot.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1f3bff;
+    --white: #ffffff;
+    --black: #000000;
+    --yellow: #ffd60a;
+    --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+    --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--body);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: max(32px, env(safe-area-inset-top)) 24px max(40px, env(safe-area-inset-bottom));
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--display);
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 0.92;
+    font-size: clamp(3.6rem, 16vw, 10.5rem);
+    letter-spacing: 0.005em;
+  }
+  /* Striped lower half echoes the Street Run Club logo texture */
+  h1 span {
+    display: block;
+    color: transparent;
+    background-image: linear-gradient(
+      180deg,
+      var(--white) 0 52%,
+      transparent 52% 58%, var(--white) 58% 66%,
+      transparent 66% 72%, var(--white) 72% 80%,
+      transparent 80% 86%, var(--white) 86% 94%,
+      transparent 94% 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-right: 0.08em;
+  }
+  .when {
+    margin: 28px 0 0;
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.8rem, 7vw, 3.2rem);
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .details {
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: clamp(1.05rem, 3.4vw, 1.35rem);
+    line-height: 1.45;
+    max-width: 34ch;
+  }
+  .details li + li { margin-top: 6px; }
+  .rsvp-row {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .rsvp {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    border: 3px solid var(--yellow);
+    font-family: var(--display);
+    font-style: italic;
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    padding: 16px 56px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .rsvp:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+  .rsvp:focus-visible { outline: 3px solid var(--white); outline-offset: 4px; }
+  .price { font-size: 1rem; font-weight: 700; }
+  @media (max-width: 520px) {
+    .rsvp { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>
+      <span>Street Run</span>
+      <span>X Movement FP</span>
+      <span>Hyrox</span>
+    </h1>
+    <p class="when">7 November 10am</p>
+    <ul class="details">
+      <li>Arrive 10 mins early!</li>
+      <li>Bring indoor shoes and a water bottle.</li>
+      <li>Gym waivers will be emailed to you.</li>
+    </ul>
+    <div class="rsvp-row">
+      <a class="rsvp" href="https://book.stripe.com/8x23cv88UclWgsfg4m6oo00" rel="noopener">RSVP</a>
+      <span class="price">$10 per person</span>
+    </div>
+  </main>
+</body>
+</html>
